@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
 
         // SQL query using prepared statements to prevent SQL injection
-        $stmt = $conn->prepare("INSERT INTO LeeviH (pulse, BPM) VALUES (?, ?)"); 
+        $stmt = $conn->prepare("INSERT INTO YourDataBase (pulse, BPM) VALUES (?, ?)"); 
         $stmt->bind_param("ss", $pulse, $BPM);  // Bind parameters
         
         // Execute the query and check if successful
