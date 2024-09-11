@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL4NdIVuAC5" 
-#define BLYNK_TEMPLATE_NAME "Hussah" 
-#define BLYNK_AUTH_TOKEN "J-Xz75INwZ8vBGTMxvLG_vPvQSrzLqc6" 
+#define BLYNK_TEMPLATE_ID "YourBlynkID" 
+#define BLYNK_TEMPLATE_NAME "YourBlynkTemplateName" 
+#define BLYNK_AUTH_TOKEN "YourBlynkAuthToken" 
 #include <ESP32Time.h> 
 #include <SPI.h> 
 #include <Wire.h> 
@@ -30,12 +30,12 @@ Adafruit_SSD1306 display (SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
 
 char auth[] = BLYNK_AUTH_TOKEN; 
 
-const char* ssid = "TVT-WLAN"; 
-const char* password = "salasana";  // WiFi 
+const char* ssid = "YourSSID"; 
+const char* password = "YourPassword";  // WiFi 
 
-const char* serverName = "10.124.20.105"; 
+const char* serverName = "YourServerIP"; 
 
-const char* api_key = "1234"; 
+const char* api_key = "YourApiKey"; 
 
 BlynkTimer timer; 
 WebServer server(80); 
